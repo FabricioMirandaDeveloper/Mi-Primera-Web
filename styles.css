@@ -1,0 +1,250 @@
+:root {
+  --color-primario: #070f2b;
+  --color-secundario: #1b1a55;
+  --color-terciario: #535c91;
+  --color-cuaternario: #9290c3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  background-color: var(--color-primario);
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.icon {
+  color: white;
+  transition: all 0.5s;
+}
+.icon:hover {
+  font-size: 18px;
+}
+header nav ul {
+  display: flex;
+  gap: 12px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+}
+header nav ul li a:hover {
+  font-size: 0.9rem;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px;
+  color: var(--color-primario);
+}
+#seccion-principal {
+  background-color: var(--color-secundario);
+  color: white;
+}
+.section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+.acerca-de {
+  text-align: end;
+  width: 200px;
+}
+.acerca-de h2 {
+  font-size: 14px;
+  padding: 5px;
+}
+.parrafo1,
+.parrafo2 {
+  padding: 5px;
+  font-size: 12px;
+}
+.acerca-imagen img {
+  width: 150px;
+}
+.section-2 {
+  width: 100%;
+  padding: 10px;
+}
+.section-2 img {
+  max-width: 100%;
+}
+footer {
+  background: #011d47;
+  color: wheat;
+}
+footer h3 {
+  font-size: 12px;
+  padding: 10px;
+}
+footer ol li {
+  font-size: 10px;
+  padding: 0px 10px 4px 10px;
+}
+.section-3 {
+  display: flex;
+  padding: 20px;
+}
+.img-comida {
+  max-width: 150px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.section-3 h6 {
+  padding: 5px;
+}
+.section-3 p {
+  font-size: 9px;
+}
+.comida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.checkbtn {
+  display: none;
+}
+
+.section-4 {
+  padding: 5px;
+  text-align: center;
+  color: var(--color-secundario);
+}
+
+.section-4 h1,
+.section-4 p {
+  color: white;
+}
+.section-4 h1 {
+  font-size: 1rem;
+}
+.section-4 p {
+  font-size: 0.8rem;
+}
+.formulario {
+  background-color: white;
+  border-radius: 5px;
+  width: 60%;
+  padding: 15px;
+  margin: 20px auto;
+}
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 0.6rem;
+  margin-top: 5px;
+}
+.form-row textarea {
+  min-height: 100px;
+  margin-bottom: 10px;
+  resize: none;
+}
+.form-row button {
+  align-self: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: var(--color-secundario);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.form-row button:hover {
+  background-color: white;
+  color: var(--color-secundario);
+  border: var(--color-secundario) 1px solid;
+}
+
+@media (max-width: 600px) {
+  header nav ul {
+    display: block;
+  }
+  .icon {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .section-1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .acerca-de {
+    padding: 0px 10px 10px 0px;
+  }
+  .section-3 {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .checkbtn {
+    color: white;
+    display: block;
+  }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    background: rgb(44, 18, 94);
+    top: 10vh;
+    left: 0%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .active {
+    opacity: 1;
+  }
+}
+
+/* ------------- Media Query para pantallas de más de 700px de resolución ------------- */
+@media only screen and (min-width: 700px) {
+  .form-row {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .form-row label {
+    text-align: left;
+    width: 120px;
+  }
+  .form-row button {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0ef9856991.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="index.html">
+          <i class="fa-solid fa-music icon"></i>
+        </a>
+        <nav>
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="navbar">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Acerca de mi</a></li>
+            <li><a href="">Trabajos</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id="seccion-principal">
+        <section class="section-1">
+          <div class="acerca-de item">
+            <h2>Acerca de mí</h2>
+            <p class="parrafo1">
+              ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+            </p>
+            <p class="parrafo2">
+              Me llamo Tere, nací en Buenos Aires y vivo en Caballito. Me gusta
+              el helado y salir a pasear en días de sol. Me encantaría aprender
+              a programar para poder ayudar a las personas a mostrar lo que
+              hacen.
+            </p>
+          </div>
+          <div class="acerca-imagen item">
+            <img src="./paisaje.jpeg" alt="es un paisaje" />
+          </div>
+        </section>
+        <section class="section-2">
+          <img src="./atardecer.jpg" alt="imagen de carrusel" />
+        </section>
+        <section class="section-3">
+          <div class="comida">
+            <img class="img-comida" src="./img/comida1.jpg" alt="" />
+            <h6>Comida 1</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              magni dolorem sequi. Sit, quod animi eum voluptatibus eaque
+              impedit possimus! Repellat iure amet quam commodi laudantium.
+              Itaque nisi accusamus rem.
+            </p>
+          </div>
+          <div class="comida">
+            <img class="img-comida" src="./img/comida2.jpg" alt="" />
+            <h6>Comida 2</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              magni dolorem sequi. Sit, quod animi eum voluptatibus eaque
+              impedit possimus! Repellat iure amet quam commodi laudantium.
+              Itaque nisi accusamus rem.
+            </p>
+          </div>
+          <div class="comida">
+            <img class="img-comida" src="./img/comida3.jpg" alt="" />
+            <h6>Comida 3</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              magni dolorem sequi. Sit, quod animi eum voluptatibus eaque
+              impedit possimus! Repellat iure amet quam commodi laudantium.
+              Itaque nisi accusamus rem.
+            </p>
+          </div>
+        </section>
+        <section class="section-4">
+          <h1>Contacto</h1>
+          <p><em>¡Esperamos tu consulta!</em></p>
+          <form action="" method="get" class="formulario" id="form">
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="pepe@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="form-row">
+              <button>Enviar</button>
+            </div>
+            <p class="alerta" id="alertas"></p>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <h3>Noticias</h3>
+        <ol>
+          <li>Instagram</li>
+          <li>TikTok</li>
+          <li>Whatsapp</li>
+        </ol>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
